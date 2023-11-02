@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(65, 65, 65);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
@@ -8,39 +9,162 @@ body {
     margin: 0 auto;
 }
 
-#imageLink {
-    height: 80px;
-}
-
-#logo {
-    height: 80px;
-    width: 80px;
-    font-size: 40px;
+/* Navigation */
+#companyName {
+    font-size: 28px;
 }
 
 nav {
+    height: 80px;
     display: flex;
-    flex-direction: row;
-    background-color: rgb(58, 110, 165);
-    font-size: 20px;
-    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(38, 109, 211);
+}
+
+nav img {
+    height: 80px;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(247, 255, 247);
 }
 
 nav ul {
-    margin: 0;
+    display: inherit;
+    justify-content: end;
+    align-items: center;
     list-style: none;
 }
 
 nav li {
-    display: inline;
+    display: inherit;
+    justify-content: center;
 }
 
-nav ul li a {
-    padding: 20%;
+nav li a {
     display: block;
-    text-decoration: none;
+    width: 118px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
+nav li a:hover {
+    background-color: rgb(30, 84, 160);
+}
+
+/* Dropdown */
 .submenu {
     display: none;
+    position: absolute;
+    margin-top: 3.8%;
+    margin-left: 1.5%;
+    z-index: 1; /* Appear above other items */
+}
+
+nav li:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid white;
+    background-color: rgb(38, 109, 211);
+}
+
+/* Splash page */
+#splash {
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+}
+
+#splash img {
+    width: 80%;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid white;
+    padding-top: 1%;
+    text-align: center;
+    color: rgb(150, 150, 150);
+}
+
+/* Main */
+main {
+    margin-top: 2%;
+    border-top: 1px solid white;
+}
+
+main h2 {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+main p {
+    width: 95%;
+    margin-left: 2%;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+i {
+    color: rgb(15, 15, 15);
+}
+
+#sources {
+    text-align: right;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Team */
+.team {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.team li {
+    margin: 2.5% 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.team img {
+    height: 240px;
+    width: 240px;
+    margin-right: 5%;
+    padding-left: 1%;
+    border-left: 4px solid black;
+}
+
+.team-info {
+    display: inherit;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+.team-info h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.team-info h4 {
+    margin: .5% 0;
+    font-size: 14px;
+}
+
+.team-info p {
+    font-size: 12x;
 }
