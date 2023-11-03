@@ -10,12 +10,12 @@ body {
 }
 
 /* Navigation */
-#companyName {
+#company-name {
     display: flex;
     align-items: center;
 }
 
-#companyName p {
+#company-name p {
     margin-left: 2%;
     font-size: 28px;
     font-weight: bold;
@@ -67,22 +67,21 @@ nav li a:hover {
 
 /* Dropdown */
 .submenu {
-    display: none;
+    display: none; /* Hidden by default */
     position: absolute;
     margin-top: 4.2%;
     z-index: 1; /* Appear above other items */
 }
 
 nav li:hover .submenu {
-    display: block;
+    display: block; /* Show dropowns */
 }
 
 .submenu a {
-    height: 40px;
+    height: 45px;
     width: 115px;
     line-height: 40px;
     border: 1px solid white;
-    border-collapse: collapse;
     background-color: rgb(38, 109, 211);
 }
 
@@ -107,7 +106,7 @@ footer {
     color: rgb(150, 150, 150);
 }
 
-/* Mains */
+/* Main */
 main {
     margin-top: 2%;
     border-top: 1px solid white;
@@ -119,7 +118,7 @@ main h2 {
     font-style: italic;
 }
 
-main p {
+main p { /* For all regular text */
     width: 95%;
     margin-left: 2%;
     font-size: 22px;
@@ -131,7 +130,7 @@ i {
     color: rgb(26, 26, 26);
 }
 
-h2, h3, #sources, label {
+h2, h3, #sources, label { /* Grouped to add an accent colour */
     color: rgb(240, 108, 0);
 }
 
@@ -161,7 +160,7 @@ h2, h3, #sources, label {
     width: 240px;
     margin-right: 5%;
     padding-left: 1%;
-    border-left: 4px solid black;
+    border-left: 4px solid black; /* Vertical bar to act as bullet point */
 }
 
 .team-info {
@@ -271,6 +270,7 @@ input[type=submit]:hover {
     background-color: rgb(204, 92, 0);
 }
 
+/* Location */
 .address {
     display: flex;
     flex-direction: column;
